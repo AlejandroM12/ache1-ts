@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+button{
+    border: none;
+    background: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+p a{
+    display: inline;
+}
+li{
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i , b, u, em{
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+form, input, textarea, select, button, label{
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    display: block;
+    color: inherit;
+}
+svg{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}

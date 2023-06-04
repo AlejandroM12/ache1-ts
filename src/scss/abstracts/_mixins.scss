@@ -1,0 +1,55 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin linksMenu {
+  font-family: $font-poppins;
+  font-style: normal;
+  font-family: $semi-bold;
+  font-size: $size;
+  line-height: 1.375rem;
+  color: $white;
+}
+@mixin linkSelect {
+  font-family: $font-poppins;
+  font-style: normal;
+  font-weight: $bold;
+  font-size: $size;
+  line-height: 1.375rem;
+}
+@mixin cardTitleLeft {
+  font-family: $font-alfa;
+  font-style: normal;
+  font-weight: $semi-bold;
+  font-size: 4rem;
+  color: $black;
+}
+@mixin cardTitleRight {
+  font-family: $font-alfa;
+  font-style: normal;
+  font-weight: $semi-bold;
+  font-size: 4rem;
+  line-height: 4.313rem;
+  color: $white;
+}
+@mixin cardDescriptionLeft {
+  font-family: $font-poppins;
+  font-style: normal;
+  font-weight: $semi-bold;
+  font-size: 1.125rem;
+  line-height: 2.25rem;
+  color: $grays;
+  max-width: 450px;
+  padding: 1.25rem 0rem;
+}
+@mixin cardDescriptionRight {
+  font-family: $font-poppins;
+  font-style: normal;
+  font-weight: $semi-bold;
+  font-size: 1.125rem;
+  line-height: 2.25rem;
+  color: $white;
+  max-width: 450px;
+  padding: 1.25rem 0rem;
+}

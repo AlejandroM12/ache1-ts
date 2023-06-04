@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* typography */
+$font-alfa: "Alfa Slab One", cursive;
+$font-poppins: "Poppins", sans-serif;
+$size: 20px;
+$semi-bold: 400;
+$semi-black-bold: 500;
+$bold: 700;
+
+/* colors */
+$white: #ffffff;
+$black: #253138;
+$black-bold: #000000;
+$grays: #707070;
+$blue: #0055ff;
+$background-container-grays: #ffffff;
+$background-container-blue: linear-gradient(180deg, #0055ff 0%, #6c63ff 100%);
+$background-button: linear-gradient(265.89deg, #0055ff 17.34%, #6c63ff 87.62%);
+$background-icon-fix: #6c63ff;
+$vector-left: 3px solid rgba(0, 85, 255, 0.53);
+$vector-left-focus: 3px solid #0055ff;
+$vector-right: 3px solid rgba(255, 255, 255, 0.5);
+$vector-right-focus: 3px solid #ffffff;
+$border-button: 1px solid #000000;
+$items-links: rgba(0, 85, 255, 0.48);
+$border-input: 1px solid rgba(0, 85, 255, 0.57);
+$rectangle-form-shadow: 0px 0px 10px 5px rgba(158, 158, 158, 0.17);
+$arrow-form: rgba(0, 85, 255, 0.5);
+
+/* breackpoints */
+$breakpoints: (
+  small: 0px,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);
