@@ -21,9 +21,17 @@ const Navbar = () => {
       <nav className="navigation">
         <button className="hamburguer-icon" onClick={toggleNav}>
           {navClass === "navigation-menu" ? (
-            <img src={hamburguerIcon} alt="hamburguer icon" />
+            <img
+              src={hamburguerIcon}
+              alt="hamburguer icon"
+              className="hamburguer-icon"
+            />
           ) : (
-            <img src={closeHamburguerIcon} alt="hamburguer icon close" />
+            <img
+              src={closeHamburguerIcon}
+              alt="hamburguer icon close"
+              className="hamburguer-icon-close"
+            />
           )}
         </button>
 

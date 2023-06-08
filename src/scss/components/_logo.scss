@@ -1,0 +1,26 @@
+.logo {
+  display: inline-flex;
+  padding: 1.5rem 0rem;
+  margin-left: 0.938rem;
+  z-index: 999;
+  cursor: pointer;
+  img {
+    width: 115.78px;
+    height: 30.91px;
+  }
+  .logo-span {
+    font-family: $font-alfa;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.375rem;
+    letter-spacing: 0.2em;
+    position: absolute;
+    padding: 0rem;
+    transform: translate(6.25rem, -1.5rem);
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  .logo {
+    padding: 1rem 2rem;
+  }
+}
