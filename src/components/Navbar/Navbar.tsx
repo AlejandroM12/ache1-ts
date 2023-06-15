@@ -37,12 +37,13 @@ const Navbar = () => {
 
         <div className={navClass}>
           <ul>
-            <RenderNavLink to="/about" label="About" toggleNav={toggleNav} />
             <RenderNavLink
               to="/services"
               label="Services"
               toggleNav={toggleNav}
             />
+            <RenderNavLink to="/about" label="About" toggleNav={toggleNav} />
+            <RenderNavLink to="/cases" label="Cases" toggleNav={toggleNav} />
             <RenderNavLink to="/jobs" label="Jobs" toggleNav={toggleNav} />
             <RenderNavLink
               to="/contact"

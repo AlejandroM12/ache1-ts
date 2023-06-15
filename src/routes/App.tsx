@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { About, Contact, Home, Jobs, Services } from "@/pages";
+import { About, Cases, Contact, Home, Jobs, Services } from "@/pages";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
+        <Route path="/cases" element={<Cases />} />
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
