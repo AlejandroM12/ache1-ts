@@ -4,8 +4,8 @@ interface ContentLeftInterface {
 
 const ContentLeft = ({ children }: ContentLeftInterface) => {
   return (
-    <div className="container leftside width-left">
-      <div className="content height-left">{children}</div>
+    <div className="container ">
+      <div className="content ">{children}</div>
     </div>
   );
 };

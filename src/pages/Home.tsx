@@ -1,4 +1,11 @@
-import { Header, Logo, Navbar, TitleHome } from "@/components";
+import {
+  AnimationHome,
+  ContentLeft,
+  Header,
+  Logo,
+  Navbar,
+  TitleHome,
+} from "@/components";
 import { Container } from "@/layouts";
 import logoHome from "@/assets/logo/ache1-logo.svg";
 
@@ -9,7 +16,11 @@ const Home = () => {
         <Logo logo={logoHome} />
         <Navbar />
       </Header>
-      <TitleHome />
+
+      <ContentLeft>
+        <TitleHome />
+        <AnimationHome />
+      </ContentLeft>
     </Container>
   );
 };
