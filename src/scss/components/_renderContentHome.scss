@@ -22,3 +22,57 @@
     height: 100%;
   }
 }
+.content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 12rem 0rem 0rem 4rem;
+  gap: 0.3rem;
+  h1 {
+    font-family: $font-alfa;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 4rem;
+    line-height: 4.313rem;
+    color: $white;
+  }
+  p {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: $white;
+  }
+  h2 {
+    font-family: $font-alfa;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 3rem;
+    line-height: 4.125rem;
+    color: $white;
+  }
+  .content-right-title-two {
+    margin-bottom: 1.2rem;
+  }
+  .content-right-title-tree {
+    margin-top: 0.8rem;
+  }
+}
+.content-down-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -5.5rem;
+  margin-top: -3rem;
+  .arrow-redir {
+    cursor: pointer;
+    width: 49.69px;
+    height: 100%;
+    .arrow {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
