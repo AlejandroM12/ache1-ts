@@ -1,0 +1,104 @@
+.content-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.938rem;
+  .card-title-left {
+    @include cardTitleLeft;
+  }
+  .card-description-left {
+    @include cardDescriptionLeft;
+  }
+  .content-lottie-webApps {
+    position: absolute;
+    transform: translate(15rem, 12rem);
+    max-width: 250px;
+  }
+  .content-lottie-apps-mobile {
+    transform: rotateY(198deg) translate(-24rem, -6rem);
+    max-width: 500px;
+    height: 280px;
+    right: 100px;
+    position: relative;
+    & > div {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .content-lottie-web-sites-mobile {
+    max-width: 230px;
+    position: absolute;
+    transform: translate(20rem, -10rem);
+  }
+}
+
+.content-web-apps {
+  padding: 8rem 7rem 0rem 6rem;
+}
+.content-apps-mobile {
+  padding: 8rem 6rem 0rem 6rem;
+}
+.content-best-webs {
+  margin-top: 8rem;
+  margin-left: -1rem;
+}
+.content-best-websites-mobile {
+  padding: 7rem 8rem 0rem 5rem;
+}
+.dots-left {
+  z-index: 1;
+  position: absolute;
+  margin-top: 6rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  .dots-icon-left {
+    width: 100%;
+    height: 85px;
+    img {
+      cursor: pointer;
+    }
+  }
+}
+.active-left {
+  background: $blue;
+}
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+  .content-card-left {
+    width: 100%;
+    height: 100%;
+    .content-lottie-webApps {
+      position: relative;
+      max-width: 250px;
+    }
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  .content-card-left {
+    width: 100%;
+    height: 100%;
+    margin-left: 0rem;
+    padding: 0rem;
+    .card-title-left {
+      font-size: 3rem;
+      line-height: 4.313rem;
+    }
+    .card-description-left {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+  .dots-left {
+    gap: 0.4rem;
+    right: 2rem;
+    top: 20rem;
+    .dots-icon-left {
+      width: 100%;
+      height: 100%;
+      img {
+        height: 45px;
+      }
+    }
+  }
+}

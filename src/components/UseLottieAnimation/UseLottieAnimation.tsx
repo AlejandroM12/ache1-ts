@@ -1,5 +1,4 @@
 import { useLottie } from "lottie-react";
-
 interface UseLottieAnimationInterface {
   animationData: any;
   loop: boolean;
