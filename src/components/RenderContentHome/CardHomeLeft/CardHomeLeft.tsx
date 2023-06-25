@@ -48,10 +48,7 @@ const CardHomeLeft = () => {
         downHandler={() => upHandler()}
       >
         {btnState === 1 && (
-          <div
-            className="content-card-left content-web-apps"
-            data-aos="fade-up"
-          >
+          <div className="content-card-left content-web-apps">
             <div className="content-lottie-webApps">
               <UseLottieAnimation
                 animationData={webAppsAnimation}
@@ -69,10 +66,7 @@ const CardHomeLeft = () => {
         )}
 
         {btnState === 2 && (
-          <div
-            className="content-card-left content-apps-mobile"
-            data-aos="fade-up"
-          >
+          <div className="content-card-left content-apps-mobile">
             <h1 className="card-title-left">Apps mobile</h1>
             <p className="card-description-left">
               It makes your app unique. From usability analysis to testing to
@@ -89,10 +83,7 @@ const CardHomeLeft = () => {
           </div>
         )}
         {btnState === 3 && (
-          <div
-            className="content-card-left content-best-websites-mobile"
-            data-aos="fade-up"
-          >
+          <div className="content-card-left content-best-websites-mobile">
             <div className="content-lottie-web-sites-mobile">
               <UseLottieAnimation
                 animationData={bestWebsitesAnimation}

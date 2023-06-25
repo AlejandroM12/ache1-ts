@@ -40,13 +40,10 @@
   width: 50%;
   display: flex;
   flex-direction: column;
+}
+.content {
   padding: 3rem 0 0 0;
 }
-
-.content {
-  flex: 1 1 auto;
-}
-
 @media only screen and (min-width: 0px) and (max-width: 420px) {
   .sitebackground {
     display: none;

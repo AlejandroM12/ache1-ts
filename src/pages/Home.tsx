@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import {
   AnimationHome,
   CardHomeLeft,
+  CardHomeRight,
   ContentLeft,
   ContentRight,
   DescriptionRightHome,
@@ -49,9 +50,9 @@ const Home = () => {
       </Header>
 
       <ContentLeft>
+        <TitleHome />
         {!change ? (
           <>
-            <TitleHome />
             <AnimationHome />
           </>
         ) : (
@@ -59,7 +60,11 @@ const Home = () => {
         )}
       </ContentLeft>
       <ContentRight>
-        <DescriptionRightHome handleInter={handleInter} scrolled={scrolled} />
+        {!change ? (
+          <DescriptionRightHome handleInter={handleInter} scrolled={scrolled} />
+        ) : (
+          <CardHomeRight />
+        )}
       </ContentRight>
     </Container>
   );
