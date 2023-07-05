@@ -50,8 +50,6 @@ const CardHomeRight = () => {
                     animationData={option.animationData}
                     autoplay={true}
                     loop={true}
-                    width={option.title === "Social media" ? 200 : 300}
-                    height={option.title === "Social media" ? 200 : 300}
                   />
                 </div>
                 <h1 className="card-title-right">{option.title}</h1>
