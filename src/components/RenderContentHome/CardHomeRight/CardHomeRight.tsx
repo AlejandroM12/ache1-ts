@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { UseLottieAnimation } from "@/components";
+import { Button, UseLottieAnimation } from "@/components";
 import dotsWhite from "@/assets/Icons/dots-white.svg";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import options from "./data";
 
 const CardHomeRight = () => {
   const [btnDot, setBtnDot] = useState(1);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const handleDotClick = (index: any) => {
     setBtnDot(index);
@@ -19,8 +20,14 @@ const CardHomeRight = () => {
     setBtnDot((prevBtnDot) => (prevBtnDot === 4 ? 1 : prevBtnDot + 1));
   };
 
-  const handleModalOpen = (modalOpen: any) => {
-    modalOpen();
+  const handleModalOpen = (modalOpenFunc: any) => {
+    modalOpenFunc();
+    setModalOpen(true);
+  };
+
+  const handleModalClose = (modalCloseFunc: any) => {
+    modalCloseFunc();
+    setModalOpen(false);
   };
 
   return (
@@ -54,14 +61,25 @@ const CardHomeRight = () => {
                 </div>
                 <h1 className="card-title-right">{option.title}</h1>
                 <p className="card-description-right">{option.description}</p>
-                {/* <Button
-                  buttonLabel="How do we work?"
+                <Button
+                  buttonLabel={option.buttonLabel}
                   onClick={() => handleModalOpen(option.modalOpen)}
-                /> */}
+                />
               </div>
             )
         )}
       </ReactScrollWheelHandler>
+      {options.map(
+        (option) =>
+          modalOpen &&
+          btnDot === option.btnDot && (
+            <ModalComponent
+              key={option.btnDot}
+              isOpen={modalOpen}
+              closeModal={() => handleModalClose(option.modalClose)}
+            />
+          )
+      )}
     </>
   );
 };
