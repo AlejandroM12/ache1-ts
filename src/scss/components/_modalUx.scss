@@ -1,0 +1,109 @@
+.container-description-modal-ux{
+  width: 100%;
+  height: 100%;
+  .mail-to{
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+  }
+}
+.lottie-modal-ux {
+  width: 100%;
+  max-width: 339px;
+  margin: 0 auto;
+  padding: 2.5rem 0 0 3.35rem;
+  text-align: end;
+  & > div{
+    margin-top: 3rem;
+  }
+}
+.modal-ux-title-left {
+  font-family: $font-alfa;
+  font-style: normal;
+  font-weight: $semi-bold;
+  font-size: 3rem;
+  line-height: 3.438rem;
+  color: $black;
+  text-align: start;
+  margin-left: 2.2rem;
+  margin-bottom: 1rem;
+}
+.modal-ux-description-left {
+  font-family: $font-poppins;
+  font-style: normal;
+  font-weight: $semi-bold;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: $grays;
+  text-align: start;
+  padding: 0 2.5rem;
+  span {
+    font-weight: $bold;
+  }
+}
+.modal-title-ux-right {
+  font-family: $font-alfa;
+  font-style: normal;
+  font-weight: $semi-bold;
+  font-size: 3rem;
+  line-height: 3.438rem;
+  color: $white;
+  padding: 4rem 3rem;
+}
+.ux-modal-img {
+  width: 100%;
+  max-width: 863px;
+  margin-left: 1.5rem;
+}
+.arrow-modal{
+  display: none;
+}
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  .lottie-modal-ux {
+    padding: 0rem;
+    margin-top: 5rem;
+  }
+  .container-description-modal-ux {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+  .modal-title-ux-right {
+    display: none;
+  }
+  .modal-ux-title-left {
+    font-size: 3rem;
+    line-height: 4.313rem;
+    margin-bottom: 0rem;
+  }
+  .modal-ux-description-left {
+    font-size: 1rem;
+    line-height: 1.875rem;
+  }
+  .container-modal-img-ux-right {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+    .ux-modal-img {
+      width: 863px;
+      position: relative;
+      overflow: scroll;
+      
+      height: 428px;
+      -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+    }
+  }
+  .arrow-modal {
+    display: block;
+  width: 100%;
+  max-width: 50px;
+  transform: translate(12rem, -1rem);
+}
+}
