@@ -12,11 +12,13 @@
   "dependencies": {
     "@types/node": "^20.2.5",
     "@types/react-lottie": "^1.2.6",
+    "@types/react-modal": "^3.16.0",
     "lottie-react": "^2.4.0",
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-lottie": "^1.2.3",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.11.2",
     "react-scroll-wheel-handler": "^2.2.0",
     "vite-plugin-dynamic-import-polyfill": "^0.1.0"

@@ -1,6 +1,7 @@
 export * from './Button';
 export * from './Header';
 export * from './Logo';
+export * from '../layouts/Modal';
 export * from './Navbar';
 export { default as AnimationHome } from './RenderContentHome/AnimationHome/AnimationHome';
 export * from './RenderContentHome/CardHomeLeft';
