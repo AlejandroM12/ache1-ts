@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Modal from "react-modal";
 import { Button, UseLottieAnimation } from "@/components";
 import dotsWhite from "@/assets/Icons/dots-white.svg";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
@@ -73,10 +74,10 @@ const CardHomeRight = () => {
         (option) =>
           modalOpen &&
           btnDot === option.btnDot && (
-            <ModalComponent
+            <Modal
               key={option.btnDot}
               isOpen={modalOpen}
-              closeModal={() => handleModalClose(option.modalClose)}
+              onRequestClose={() => handleModalClose(option.modalClose)}
             />
           )
       )}
