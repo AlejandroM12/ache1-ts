@@ -8,11 +8,11 @@ import uxAnimation from "@/assets/modalsLotties/modal-ux.json";
 import uxProcess from "@/assets/modalsImg/ux-process.svg";
 import arrowRight from "@/assets/modalsImg/arrow-modal.svg";
 
-interface ModalSocialMediaInterface {
+interface ModalUxInterface {
   isOpen: any;
   onRequestClose: any;
 }
-const ModalUx = ({ isOpen, onRequestClose }: ModalSocialMediaInterface) => {
+const ModalUx = ({ isOpen, onRequestClose }: ModalUxInterface) => {
   return (
     <Modal isOpen={isOpen} onRequestClose={onRequestClose}>
       <ContentModalLeft>

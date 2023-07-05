@@ -1,0 +1,177 @@
+.container-description-modal-web-apps {
+  .lottie-modal-web-apps {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 2rem;
+    margin-left: 7rem;
+  }
+  .modal-web-app-title-left {
+    font-family: $font-alfa;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 3.75rem;
+    line-height: 4.313rem;
+    color: $black;
+    margin-left: 4rem;
+    margin-top: -1rem;
+  }
+  .modal-web-app-description-left {
+    font-family: $font-poppins;
+    font-style: mixed;
+    font-weight: $semi-bold;
+    font-size: 1rem;
+    line-height: 1.875rem;
+    color: $grays;
+    text-align: start;
+    padding: 0.5rem 4rem;
+    span {
+      font-weight: $bold;
+    }
+  }
+  .btn {
+    margin-left: 4rem;
+  }
+}
+.modal-web-app-title-right {
+  font-family: $font-alfa;
+  font-style: normal;
+  font-weight: $semi-bold;
+  font-size: 3rem;
+  line-height: 3.438rem;
+  color: $white;
+  width: 100%;
+  max-width: 411px;
+  margin-top: 1rem;
+  display: flex;
+}
+.container-modal-web-app-img-first {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 7rem;
+  padding-top: 3rem;
+  p {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    text-align: center;
+    color: $white;
+  }
+  .modal-web-app-node-logo {
+    .web-app-modal-node-img {
+      max-width: 100%;
+    }
+    p {
+      margin-top: 2rem;
+    }
+  }
+  .modal-web-app-react-native-logo {
+    .web-app-modal-react-native-img {
+      max-width: 100%;
+    }
+    p {
+      white-space: nowrap;
+      margin-top: 0.5rem;
+    }
+  }
+  .modal-web-app-net-logo {
+    .web-app-modal-net-img {
+      max-width: 100%;
+    }
+    p {
+      margin-top: 2rem;
+    }
+  }
+}
+.container-modal-web-app-img-two {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10rem;
+  margin-top: 4rem;
+  p {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    text-align: center;
+    color: $white;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  .container-description-modal-web-apps {
+    .lottie-modal-web-apps {
+      margin-top: 4rem;
+    }
+    .modal-web-app-title-left {
+      margin-left: 3rem;
+      margin-top: -1rem;
+    }
+    .modal-web-app-description-left {
+      padding: 0.5rem 3rem;
+    }
+    .btn {
+      margin: 1rem 0rem 2rem 3rem;
+    }
+  }
+  .content-modal-rightside {
+    .modal-web-app-title-right {
+      display: none;
+    }
+  }
+  .container-modal-web-app-img-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    .modal-web-app-node-logo {
+      .web-app-modal-node-img {
+        max-width: 100%;
+      }
+      p {
+        margin-top: 1rem;
+      }
+    }
+    .modal-web-app-react-native-logo {
+      .web-app-modal-react-native-img {
+        max-width: 100%;
+      }
+      p {
+        white-space: nowrap;
+        margin-top: 1rem;
+      }
+    }
+    .modal-web-app-net-logo {
+      .web-app-modal-net-img {
+        max-width: 100%;
+      }
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
+  .container-modal-web-app-img-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    gap: 4rem;
+    .modal-web-app-angular-logo {
+      p {
+        margin-top: 1rem;
+      }
+    }
+    .modal-web-app-spring-logo {
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
