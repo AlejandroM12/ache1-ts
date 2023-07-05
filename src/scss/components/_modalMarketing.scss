@@ -1,0 +1,99 @@
+.container-description-marketing-mobile {
+  display: flex;
+  flex-direction: column;
+  .lottie-marketing-mobile {
+    width: 100%;
+    max-width: 300px;
+    margin-left: 5rem;
+    margin-top: 2rem;
+  }
+  .modal-marketing-title-left {
+    font-family: $font-alfa;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 3.75rem;
+    line-height: 4.313rem;
+    color: $black;
+    margin-left: 2.5rem;
+  }
+  .modal-marketing-description-left {
+    font-family: $font-poppins;
+    font-style: mixed;
+    font-weight: $semi-bold;
+    font-size: 1rem;
+    line-height: 1.875rem;
+    color: $grays;
+    text-align: start;
+    padding: 0rem 2.5rem;
+    span {
+      font-weight: $bold;
+    }
+    &.span {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .btn {
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+  }
+}
+.container-marketing-modal-right {
+  display: flex;
+  flex-direction: column;
+  .content-marketing-modal-right {
+    padding: 1rem 1rem;
+
+    .container-list-marketing {
+      padding: 0rem 2rem 0rem 2rem;
+      .list-marketing {
+        list-style-image: url("../../assets/Icons/arrow-modal-marketing-icon.svg");
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: $semi-black-bold;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        color: $white;
+        margin: 1rem;
+        padding: 0rem 3rem 0rem 1rem;
+        text-align: justify;
+        gap: 1rem;
+      }
+    }
+  }
+  .content-marketing-modal-right-title {
+    font-family: $font-alfa;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 2rem;
+    line-height: 3.438rem;
+    color: $white;
+    margin-left: 1.2rem;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  .container-description-marketing-mobile {
+    .lottie-marketing-mobile {
+      margin-top: 4rem;
+    }
+    .btn {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .container-marketing-modal-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .content-marketing-modal-right {
+      .container-list-marketing {
+        .list-marketing {
+          font-size: 1rem;
+          line-height: 2rem;
+          text-align: start;
+          padding: 0rem 1.5rem 0rem 0.5rem;
+        }
+      }
+    }
+  }
+}
