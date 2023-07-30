@@ -1,10 +1,6 @@
-import {
-  ContentModalLeft,
-  ContentModalRight,
-  Modal,
-  UseLottieAnimation,
-} from "@/components";
+import { UseLottieAnimation } from "@/components";
 import animationBranding from "@/assets/modalsLotties/branding-full.json";
+import { ContentModalLeft, ContentModalRight, Modal } from "@/layouts/Modal";
 
 interface ModalBrandingInterface {
   isOpen: any;

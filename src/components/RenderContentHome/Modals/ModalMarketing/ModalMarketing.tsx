@@ -1,10 +1,6 @@
-import {
-  ContentModalLeft,
-  ContentModalRight,
-  Modal,
-  UseLottieAnimation,
-} from "@/components";
+import { UseLottieAnimation } from "@/components";
 import animationMarketing from "@/assets/modalsLotties/marketing-full.json";
+import { ContentModalLeft, ContentModalRight, Modal } from "@/layouts/Modal";
 interface ModalMarketingInterface {
   isOpen: any;
   onRequestClose: any;

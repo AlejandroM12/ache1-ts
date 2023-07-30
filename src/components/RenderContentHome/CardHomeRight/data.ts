@@ -10,8 +10,6 @@ import marketingAnimation from "@/assets/lotties/marketing.json";
       title: "Ux",
       description:
         "We carry out a survey of the market and the competition. We plan and design the correct flow for your website to be successful.",
-        // modalOpen: openModalUx,
-        // modalClose: closeModalUx,
         buttonLabel: "How do we work?"
     },
     {
@@ -20,18 +18,14 @@ import marketingAnimation from "@/assets/lotties/marketing.json";
       title: "Branding",
       description:
         "Design your brand identity from scratch. Create a unique language that identifies you in the market.",
-        // modalOpen: openModalBranding,
-        // modalClose: closeModalBranding,
         buttonLabel: "I want to start"
     },
     {
       btnDot: 3,
       animationData: socialMediaAnimation,
-      title: "Social media",
+      title: "Social Media",
       description:
         "We perform a competitive analysis to create your brand strategy on social networks. Guidelines for communication, promotion and user monitoring.",
-        // modalOpen: openModalSocialMedia,
-        // modalClose: closeModalSocialMedia,
         buttonLabel: "Put your brand up!"
     },
     {
@@ -40,8 +34,7 @@ import marketingAnimation from "@/assets/lotties/marketing.json";
       title: "Marketing",
       description:
         "Use our services and build a solid digital presence across digital marketing, creative web design...",
-        // modalOpen: openModalMarketing,
-        // modalClose: closeModalMarketing,
+
         buttonLabel: "Grow up now"
     },
   ];

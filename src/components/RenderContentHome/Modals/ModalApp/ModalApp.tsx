@@ -1,9 +1,4 @@
-import {
-  ContentModalLeft,
-  ContentModalRight,
-  Modal,
-  UseLottieAnimation,
-} from "@/components";
+import { UseLottieAnimation } from "@/components";
 import animationAppMobile from "@/assets/modalsLotties/apps-mobile.json";
 import nodeLogo from "@/assets/modalsImg/node.svg";
 import reactLogo from "@/assets/modalsImg/react.svg";
@@ -12,6 +7,7 @@ import iosLogo from "@/assets/modalsImg/ios.svg";
 import androidLogo from "@/assets/modalsImg/android.svg";
 import awsLogo from "@/assets/modalsImg/aws.svg";
 import firebaseLogo from "@/assets/modalsImg/firebase.svg";
+import { ContentModalLeft, ContentModalRight, Modal } from "@/layouts/Modal";
 
 interface ModalAppInterface {
   isOpen: any;

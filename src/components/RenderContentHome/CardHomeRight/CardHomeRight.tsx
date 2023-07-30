@@ -1,13 +1,25 @@
 import { useState } from "react";
-import Modal from "react-modal";
-import { Button, UseLottieAnimation } from "@/components";
+
+import {
+  Button,
+  ModalBranding,
+  ModalMarketing,
+  ModalSocialMedia,
+  ModalUx,
+  UseLottieAnimation,
+} from "@/components";
 import dotsWhite from "@/assets/Icons/dots-white.svg";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import options from "./data";
 
 const CardHomeRight = () => {
   const [btnDot, setBtnDot] = useState(1);
-  const [modalOpen, setModalOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState({
+    ux: false,
+    branding: false,
+    "social media": false,
+    marketing: false,
+  });
 
   const handleDotClick = (index: any) => {
     setBtnDot(index);
@@ -21,14 +33,18 @@ const CardHomeRight = () => {
     setBtnDot((prevBtnDot) => (prevBtnDot === 4 ? 1 : prevBtnDot + 1));
   };
 
-  const handleModalOpen = (modalOpenFunc: any) => {
-    modalOpenFunc();
-    setModalOpen(true);
+  const handleModalOpen = (modalName: any) => {
+    setModalOpen((prevState) => ({
+      ...prevState,
+      [modalName]: true,
+    }));
   };
 
-  const handleModalClose = (modalCloseFunc: any) => {
-    modalCloseFunc();
-    setModalOpen(false);
+  const handleModalClose = (modalName: any) => {
+    setModalOpen((prevState) => ({
+      ...prevState,
+      [modalName]: false,
+    }));
   };
 
   return (
@@ -64,22 +80,35 @@ const CardHomeRight = () => {
                 <p className="card-description-right">{option.description}</p>
                 <Button
                   buttonLabel={option.buttonLabel}
-                  onClick={() => handleModalOpen(option.modalOpen)}
+                  onClick={() => handleModalOpen(option.title.toLowerCase())}
                 />
               </div>
             )
         )}
       </ReactScrollWheelHandler>
-      {options.map(
-        (option) =>
-          modalOpen &&
-          btnDot === option.btnDot && (
-            <Modal
-              key={option.btnDot}
-              isOpen={modalOpen}
-              onRequestClose={() => handleModalClose(option.modalClose)}
-            />
-          )
+      {modalOpen.ux && (
+        <ModalUx
+          isOpen={modalOpen.ux}
+          onRequestClose={() => handleModalClose("ux")}
+        />
+      )}
+      {modalOpen.branding && (
+        <ModalBranding
+          isOpen={modalOpen.branding}
+          onRequestClose={() => handleModalClose("branding")}
+        />
+      )}
+      {modalOpen["social media"] && (
+        <ModalSocialMedia
+          isOpen={modalOpen["social media"]}
+          onRequestClose={() => handleModalClose("social media")}
+        />
+      )}
+      {modalOpen.marketing && (
+        <ModalMarketing
+          isOpen={modalOpen.marketing}
+          onRequestClose={() => handleModalClose("marketing")}
+        />
       )}
     </>
   );

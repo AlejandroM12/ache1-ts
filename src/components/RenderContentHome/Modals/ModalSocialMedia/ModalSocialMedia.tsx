@@ -1,10 +1,6 @@
-import {
-  ContentModalLeft,
-  ContentModalRight,
-  Modal,
-  UseLottieAnimation,
-} from "@/components";
+import { UseLottieAnimation } from "@/components";
 import animationSocialMedia from "@/assets/modalsLotties/social-media-full.json";
+import { ContentModalLeft, ContentModalRight, Modal } from "@/layouts/Modal";
 
 interface ModalSocialMediaInterface {
   isOpen: any;

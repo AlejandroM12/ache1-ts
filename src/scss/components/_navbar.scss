@@ -7,7 +7,7 @@
   padding-top: 0.5rem;
   padding-right: 1rem;
   background: transparent;
-  z-index: 998;
+  z-index: 999;
   .hamburguer-icon {
     border: 0;
     height: 40px;
@@ -107,7 +107,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        z-index: 998;
+        z-index: 800;
         background: $background-container-blue;
         li {
           text-align: center;

@@ -1,12 +1,8 @@
-import {
-  ContentModalLeft,
-  ContentModalRight,
-  Modal,
-  UseLottieAnimation,
-} from "@/components";
+import { UseLottieAnimation } from "@/components";
 import uxAnimation from "@/assets/modalsLotties/modal-ux.json";
 import uxProcess from "@/assets/modalsImg/ux-process.svg";
 import arrowRight from "@/assets/modalsImg/arrow-modal.svg";
+import { ContentModalLeft, ContentModalRight, Modal } from "@/layouts/Modal";
 
 interface ModalUxInterface {
   isOpen: any;
