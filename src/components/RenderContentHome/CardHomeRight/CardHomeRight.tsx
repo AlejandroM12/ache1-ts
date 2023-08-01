@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import {
   Button,
   ModalBranding,
@@ -10,7 +9,7 @@ import {
 } from "@/components";
 import dotsWhite from "@/assets/Icons/dots-white.svg";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
-import options from "./data";
+import { options, OptionData } from "./data";
 
 const CardHomeRight = () => {
   const [btnDot, setBtnDot] = useState(1);
@@ -21,7 +20,7 @@ const CardHomeRight = () => {
     marketing: false,
   });
 
-  const handleDotClick = (index: any) => {
+  const handleDotClick = (index: number) => {
     setBtnDot(index);
   };
 
@@ -33,14 +32,14 @@ const CardHomeRight = () => {
     setBtnDot((prevBtnDot) => (prevBtnDot === 4 ? 1 : prevBtnDot + 1));
   };
 
-  const handleModalOpen = (modalName: any) => {
+  const handleModalOpen = (modalName: string) => {
     setModalOpen((prevState) => ({
       ...prevState,
       [modalName]: true,
     }));
   };
 
-  const handleModalClose = (modalName: any) => {
+  const handleModalClose = (modalName: string) => {
     setModalOpen((prevState) => ({
       ...prevState,
       [modalName]: false,
@@ -50,7 +49,7 @@ const CardHomeRight = () => {
   return (
     <>
       <div className="dots-right">
-        {options.map((option) => (
+        {options.map((option: OptionData) => (
           <div className="dots-icon-right" key={option.btnDot}>
             <img
               src={dotsWhite}

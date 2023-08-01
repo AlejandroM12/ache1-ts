@@ -4,8 +4,11 @@
   align-items: flex-start;
   justify-content: center;
   gap: 0.938rem;
+  margin-top: 3rem;
+  padding: 3rem 12rem 0rem 3rem;
   .card-title-left {
     @include cardTitleLeft;
+    line-height: 3.5rem;
   }
   .card-description-left {
     @include cardDescriptionLeft;
@@ -49,7 +52,7 @@
 .dots-left {
   z-index: 1;
   position: absolute;
-  margin-top: 6rem;
+  top: 15rem;
   left: 2rem;
   display: flex;
   flex-direction: column;

@@ -1,4 +1,4 @@
-import { UseLottieAnimation } from "@/components";
+import { Button, UseLottieAnimation } from "@/components";
 import animationWebApps from "@/assets/modalsLotties/web-apps-full.json";
 import nodeLogo from "@/assets/modalsImg/node.svg";
 import reactLogo from "@/assets/modalsImg/react.svg";
@@ -6,10 +6,11 @@ import netLogo from "@/assets/modalsImg/net.svg";
 import angularLogo from "@/assets/modalsImg/angular.svg";
 import springLogo from "@/assets/modalsImg/spring.svg";
 import { ContentModalLeft, ContentModalRight, Modal } from "@/layouts/Modal";
+import { MailTo } from "@/components/MailTo";
 
 interface ModalWebAppsInterface {
-  isOpen: any;
-  onRequestClose: any;
+  isOpen: boolean;
+  onRequestClose: () => void;
 }
 
 const ModalWebApps = ({ isOpen, onRequestClose }: ModalWebAppsInterface) => {
@@ -37,6 +38,9 @@ const ModalWebApps = ({ isOpen, onRequestClose }: ModalWebAppsInterface) => {
               and increase their performance.
             </span>
           </p>
+          <MailTo email="hi@ache1.com" subject="Web App Project">
+            <Button buttonLabel="Shall we start?" />
+          </MailTo>
         </div>
       </ContentModalLeft>
       <ContentModalRight>

@@ -41,7 +41,7 @@
   line-height: 2.25rem;
   color: $grays;
   max-width: 450px;
-  padding: 1.25rem 0rem;
+  padding: 0.5rem 0rem;
 }
 @mixin cardDescriptionRight {
   font-family: $font-poppins;
@@ -51,5 +51,5 @@
   line-height: 2.25rem;
   color: $white;
   max-width: 450px;
-  padding: 1.25rem 0rem;
+  padding: 0.5rem 0rem;
 }
