@@ -1,5 +1,5 @@
 interface ButtonInterface {
-  onClick: () => void;
+  onClick?: () => void;
   buttonLabel: string;
 }
 const Button = ({ buttonLabel, onClick }: ButtonInterface) => {

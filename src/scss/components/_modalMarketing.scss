@@ -3,7 +3,7 @@
   flex-direction: column;
   .lottie-marketing-mobile {
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     margin-left: 5rem;
     margin-top: 2rem;
   }
@@ -47,7 +47,7 @@
     .container-list-marketing {
       padding: 0rem 2rem 0rem 2rem;
       .list-marketing {
-        list-style-image: url("../../assets/Icons/arrow-modal-marketing-icon.svg");
+        list-style-image: url("@/assets/Icons/arrow-modal-marketing-icon.svg");
         font-family: $font-poppins;
         font-style: normal;
         font-weight: $semi-black-bold;

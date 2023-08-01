@@ -1,20 +1,16 @@
-.container-description-modal-ux{
+.container-description-modal-ux {
   width: 100%;
   height: 100%;
-  .mail-to{
+  .mail-to {
     margin-left: 2.5rem;
     margin-top: 1rem;
   }
 }
 .lottie-modal-ux {
   width: 100%;
-  max-width: 339px;
+  max-width: 200px;
   margin: 0 auto;
-  padding: 2.5rem 0 0 3.35rem;
   text-align: end;
-  & > div{
-    margin-top: 3rem;
-  }
 }
 .modal-ux-title-left {
   font-family: $font-alfa;
@@ -54,7 +50,7 @@
   max-width: 863px;
   margin-left: 1.5rem;
 }
-.arrow-modal{
+.arrow-modal {
   display: none;
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
@@ -92,18 +88,18 @@
       width: 863px;
       position: relative;
       overflow: scroll;
-      
+
       height: 428px;
       -ms-overflow-style: none;
-    &::-webkit-scrollbar {
-      width: 0px;
-    }
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
     }
   }
   .arrow-modal {
     display: block;
-  width: 100%;
-  max-width: 50px;
-  transform: translate(12rem, -1rem);
-}
+    width: 100%;
+    max-width: 50px;
+    transform: translate(12rem, -1rem);
+  }
 }

@@ -38,4 +38,14 @@
   right: 0;
   margin-right: 3.5rem;
   cursor: pointer;
+  z-index: 999;
+}
+.header-modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

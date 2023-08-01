@@ -1,4 +1,4 @@
-import { UseLottieAnimation } from "@/components";
+import { Button, UseLottieAnimation } from "@/components";
 import animationAppMobile from "@/assets/modalsLotties/apps-mobile.json";
 import nodeLogo from "@/assets/modalsImg/node.svg";
 import reactLogo from "@/assets/modalsImg/react.svg";
@@ -8,11 +8,13 @@ import androidLogo from "@/assets/modalsImg/android.svg";
 import awsLogo from "@/assets/modalsImg/aws.svg";
 import firebaseLogo from "@/assets/modalsImg/firebase.svg";
 import { ContentModalLeft, ContentModalRight, Modal } from "@/layouts/Modal";
+import { MailTo } from "@/components/MailTo";
 
 interface ModalAppInterface {
-  isOpen: any;
-  onRequestClose: any;
+  isOpen: boolean;
+  onRequestClose: () => void;
 }
+
 const ModalApp = ({ isOpen, onRequestClose }: ModalAppInterface) => {
   return (
     <Modal isOpen={isOpen} onRequestClose={onRequestClose}>
@@ -37,6 +39,9 @@ const ModalApp = ({ isOpen, onRequestClose }: ModalAppInterface) => {
             create your custom app from design, strategy to its correct
             development.
           </p>
+          <MailTo email="hi@ache1.com" subject="New App Project">
+            <Button buttonLabel="I want to start" />
+          </MailTo>
         </div>
       </ContentModalLeft>
       <ContentModalRight>

@@ -1,10 +1,11 @@
-import { UseLottieAnimation } from "@/components";
+import { Button, UseLottieAnimation } from "@/components";
 import animationSocialMedia from "@/assets/modalsLotties/social-media-full.json";
 import { ContentModalLeft, ContentModalRight, Modal } from "@/layouts/Modal";
+import { MailTo } from "@/components/MailTo";
 
 interface ModalSocialMediaInterface {
-  isOpen: any;
-  onRequestClose: any;
+  isOpen: boolean;
+  onRequestClose: () => void;
 }
 const ModalSocialMedia = ({
   isOpen,
@@ -53,6 +54,9 @@ const ModalSocialMedia = ({
               <li className="list-social-media">No posting on weekends</li>
               <li className="list-social-media">Schedule of dates</li>
             </ul>
+            <MailTo email="hi@ache1.com" subject="Social Media - Basic Pack">
+              <Button buttonLabel="check price" />
+            </MailTo>
           </div>
           <div className="container-card-social-media-right">
             <p className="content-card-title-social-media-right">
@@ -68,6 +72,9 @@ const ModalSocialMedia = ({
               <li className="list-social-media">Organic user tracking</li>
               <li className="list-social-media">Schedule of dates</li>
             </ul>
+            <MailTo email="hi@ache1.com" subject=" Social Media - Classic Pack">
+              <Button buttonLabel="check price" />
+            </MailTo>
           </div>
           <div className="container-card-social-media-right full">
             <p className="content-card-title-social-media-right">Full Pack</p>
@@ -82,6 +89,9 @@ const ModalSocialMedia = ({
               <li className="list-social-media">Responses to queries</li>
               <li className="list-social-media">Schedule of dates</li>
             </ul>
+            <MailTo email="hi@ache1.com" subject="Social Media - Full Pack">
+              <Button buttonLabel="check price" />
+            </MailTo>
           </div>
           <div className="container-card-social-media-right">
             <p className="content-card-title-social-media-right">
@@ -98,6 +108,9 @@ const ModalSocialMedia = ({
               <li className="list-social-media">Responses to queries</li>
               <li className="list-social-media">Schedule of dates</li>
             </ul>
+            <MailTo email="hi@ache1.com" subject="Social Media - Premium Pack">
+              <Button buttonLabel="check price" />
+            </MailTo>
           </div>
         </div>
         <button className="close-modal" onClick={onRequestClose}>

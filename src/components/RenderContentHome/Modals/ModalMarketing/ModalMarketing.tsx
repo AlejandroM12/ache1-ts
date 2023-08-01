@@ -1,10 +1,13 @@
-import { UseLottieAnimation } from "@/components";
+import { Button, UseLottieAnimation } from "@/components";
 import animationMarketing from "@/assets/modalsLotties/marketing-full.json";
 import { ContentModalLeft, ContentModalRight, Modal } from "@/layouts/Modal";
+import { MailTo } from "@/components/MailTo";
+
 interface ModalMarketingInterface {
-  isOpen: any;
-  onRequestClose: any;
+  isOpen: boolean;
+  onRequestClose: () => void;
 }
+
 const ModalMarketing = ({
   isOpen,
   onRequestClose,
@@ -30,6 +33,9 @@ const ModalMarketing = ({
             We have the best team of analysts and designers who will create a
             tailored strategy for your company.
           </p>
+          <MailTo email="hi@ache1.com" subject="Marketing Grow Up">
+            <Button buttonLabel="Grow up now" />
+          </MailTo>
         </div>
       </ContentModalLeft>
       <ContentModalRight>

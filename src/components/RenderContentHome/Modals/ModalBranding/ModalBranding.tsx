@@ -1,11 +1,13 @@
-import { UseLottieAnimation } from "@/components";
+import { Button, UseLottieAnimation } from "@/components";
 import animationBranding from "@/assets/modalsLotties/branding-full.json";
 import { ContentModalLeft, ContentModalRight, Modal } from "@/layouts/Modal";
+import { MailTo } from "@/components/MailTo";
 
 interface ModalBrandingInterface {
-  isOpen: any;
-  onRequestClose: any;
+  isOpen: boolean;
+  onRequestClose: () => void;
 }
+
 const ModalBranding = ({ isOpen, onRequestClose }: ModalBrandingInterface) => {
   return (
     <Modal isOpen={isOpen} onRequestClose={onRequestClose}>
@@ -31,6 +33,9 @@ const ModalBranding = ({ isOpen, onRequestClose }: ModalBrandingInterface) => {
             Because when you create a logo or brand, you are considering
             specific fonts and color palette for that logo.
           </p>
+          <MailTo email="hi@ache1.com" subject="New Branding">
+            <Button buttonLabel="I want to start" />
+          </MailTo>
         </div>
       </ContentModalLeft>
       <ContentModalRight>
