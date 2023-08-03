@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 interface LogoInterface {
   logo: string;
-  onClick?: () => void;
+  onClick: () => void;
 }
 const Logo = ({ logo, onClick }: LogoInterface) => {
   return (

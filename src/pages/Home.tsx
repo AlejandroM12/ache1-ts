@@ -45,7 +45,7 @@ const Home = () => {
   return (
     <Container>
       <Header transparent={true} height={100}>
-        <Logo logo={logoHome} />
+        <Logo logo={logoHome} onClick={() => setChange(false)} />
         <Navbar />
       </Header>
 
